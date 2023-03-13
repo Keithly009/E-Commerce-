@@ -72,7 +72,7 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
   try { 
-    await category.delete({ 
+    await Category.delete({ 
       where: { id: req.params.id 
       }
     })
